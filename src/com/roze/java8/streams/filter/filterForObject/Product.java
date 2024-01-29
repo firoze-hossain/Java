@@ -1,4 +1,4 @@
-package com.roze.streams.filter.filterForObject;
+package com.roze.java8.streams.filter.filterForObject;
 
 public class Product {
     private Long id;

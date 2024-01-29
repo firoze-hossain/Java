@@ -1,4 +1,4 @@
-package com.roze.streams.filter.filterExample2;
+package com.roze.java8.streams.filter.filterExample2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
