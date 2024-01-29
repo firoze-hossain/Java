@@ -1,4 +1,4 @@
-package com.roze.java8.streams.map;
+package com.roze.java8.streams.map.mapExample2;
 
 import java.util.Arrays;
 import java.util.List;
