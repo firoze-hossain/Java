@@ -10,7 +10,7 @@ public class StreamMethod1 {
         //**distinct
         //**limit
 
-        //Terminal method
+        //Terminal method(direct we can apply in stream)
         //**count
         //**forEach
 

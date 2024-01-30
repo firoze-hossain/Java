@@ -5,11 +5,11 @@ import java.util.List;
 import java.util.Optional;
 
 public class StreamMethod2 {
-    //non-terminal
+    //terminal(direct we can apply in stream)
     //**min
     //**max
 
-    //Terminal
+    //Terminal(direct we can apply in stream)
     //**Count
     public static void main(String[] args) {
         List<Integer> nums = Arrays.asList(1, 2, 2, 6, 9, 8, 5, 6, 4, 3);
