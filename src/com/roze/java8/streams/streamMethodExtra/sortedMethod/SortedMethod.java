@@ -1,4 +1,4 @@
-package com.roze.java8.streams.streamMethodExtra;
+package com.roze.java8.streams.streamMethodExtra.sortedMethod;
 
 import java.util.Arrays;
 import java.util.Comparator;
