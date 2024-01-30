@@ -1,4 +1,4 @@
-package com.roze.java8.streams.flatmap.streamMethod.streamMethod3;
+package com.roze.java8.streams.streamMethod.streamMethod3;
 
 import java.util.Arrays;
 import java.util.List;

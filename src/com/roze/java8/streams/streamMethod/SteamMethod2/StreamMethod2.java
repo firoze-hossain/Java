@@ -1,4 +1,4 @@
-package com.roze.java8.streams.flatmap.streamMethod.SteamMethod2;
+package com.roze.java8.streams.streamMethod.SteamMethod2;
 
 import java.util.Arrays;
 import java.util.List;
