@@ -1,6 +1,6 @@
 package com.roze.java8.comparableAndComparator.customObject;
 
-public class Song implements Comparable{
+public class Song implements Comparable<Song> {
     private String title;
     private String artist;
     private Integer releaseDate;
@@ -45,7 +45,7 @@ public class Song implements Comparable{
     }
 
     @Override
-    public int compareTo(Object o) {
+    public int compareTo(Song o) {
         return 0;
     }
 }
