@@ -14,7 +14,10 @@ public class MP4 {
         musicList.add(new Song("Noble", "Harbad ", 2000));
         musicList.add(new Song("Tumi kobe esechile", "Manna Dey", 1995));
         Util.iterateList(musicList);
+        System.out.println();
         //problem created
         Collections.sort(musicList);
+        System.out.println("After sorting...");
+        Util.iterateList(musicList);
     }
 }
