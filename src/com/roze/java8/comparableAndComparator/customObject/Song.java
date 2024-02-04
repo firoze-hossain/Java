@@ -44,8 +44,20 @@ public class Song implements Comparable<Song> {
                 '}';
     }
 
+//    @Override
+//    public int compareTo(Song nextSong) {
+//
+//        return this.getReleaseDate().compareTo(nextSong.getReleaseDate());
+//    }
+
     @Override
-    public int compareTo(Song o) {
+    public int compareTo(Song nextSong) {
+        if (this.getReleaseDate() > nextSong.getReleaseDate()) {
+            return +1;
+        }
+        if (this.getReleaseDate() < nextSong.getReleaseDate()) {
+            return -1;
+        }
         return 0;
     }
 }
