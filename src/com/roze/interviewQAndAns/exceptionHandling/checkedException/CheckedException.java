@@ -5,7 +5,7 @@ public class CheckedException {
         //detected by java compiler on compile time
         //Example:FileNotFoundException, IOException,InterruptedException etc.
         System.out.println("Started...");
-        Thread.sleep(3000);
+       // Thread.sleep(3000);
         System.out.println("Stopped");
     }
 }
