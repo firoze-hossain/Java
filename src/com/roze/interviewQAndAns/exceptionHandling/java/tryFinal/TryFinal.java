@@ -1,4 +1,4 @@
-package com.roze.interviewQAndAns.exceptionHandling.java.tryCatchFinal;
+package com.roze.interviewQAndAns.exceptionHandling.java.tryFinal;
 
 public class TryFinal {
     public static void main(String[] args) {
