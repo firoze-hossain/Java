@@ -1,4 +1,4 @@
-package com.roze.interviewQAndAns.exceptionHandling.java.tryCatch;
+package com.roze.interviewQAndAns.exceptionHandling.tryCatch;
 
 public class MultipleException {
     public static void main(String[] args) {
