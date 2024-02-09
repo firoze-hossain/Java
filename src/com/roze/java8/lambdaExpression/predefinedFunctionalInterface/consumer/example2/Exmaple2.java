@@ -67,7 +67,7 @@ public class Exmaple2 {
         //Consumer(it will take one argument and just print the value and does not return anything)
         //it wil just print the properties of employee using employee type's
         Consumer<Employee> c = n -> {
-            System.out.println( "Salary: " + n.getSalary() + " Gender: " + n.getGender());
+            System.out.println("Salary: " + n.getSalary() + " Gender: " + n.getGender());
         };
 
         for (Employee emp : employeeList) {
