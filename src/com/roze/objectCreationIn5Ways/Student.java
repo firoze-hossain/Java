@@ -1,6 +1,8 @@
 package com.roze.objectCreationIn5Ways;
 
-public class Student implements Cloneable{
+import java.io.Serializable;
+
+public class Student implements Cloneable, Serializable {
     public int id;
 
     public Student() {
