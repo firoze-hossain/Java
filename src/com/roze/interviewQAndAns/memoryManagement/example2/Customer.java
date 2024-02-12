@@ -14,6 +14,12 @@ public class Customer {
         return name;
     }
 
+    public String getName1() {
+        String temp = this.name;
+        this.name = "Millat";
+        return temp;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
