@@ -1,4 +1,4 @@
-package com.roze.interviewQAndAns.memoryManagement;
+package com.roze.interviewQAndAns.memoryManagement.example1;
 
 public class ValuesAndReference {
     public static void main(String[] args) {
