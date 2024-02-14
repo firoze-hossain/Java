@@ -1,4 +1,4 @@
-package com.roze.interviewQAndAns.memoryManagement.example3;
+package com.roze.interviewQAndAns.memoryManagement.valuesAndReferences.example3;
 
 public class Container {
     private String initial = "A";

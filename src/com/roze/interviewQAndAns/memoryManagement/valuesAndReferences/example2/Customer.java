@@ -1,4 +1,4 @@
-package com.roze.interviewQAndAns.memoryManagement.example2;
+package com.roze.interviewQAndAns.memoryManagement.valuesAndReferences.example2;
 
 public class Customer {
     private String name;
