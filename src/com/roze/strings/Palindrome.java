@@ -6,8 +6,7 @@ public class Palindrome {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
-        StringBuilder stringBuilder = new StringBuilder(str);
-        System.out.println(isPalindrome(stringBuilder.toString()));
+        System.out.println(isPalindrome(str));
     }
 
     //using StringBuilder
