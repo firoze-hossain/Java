@@ -1,4 +1,4 @@
-package com.roze.strings;
+package com.roze.strings.stringBuilder;
 
 public class StringBuilderExample {
     public static void main(String[] args) {
