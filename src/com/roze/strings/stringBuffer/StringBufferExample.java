@@ -1,5 +1,7 @@
 package com.roze.strings.stringBuffer;
 
+import java.util.Arrays;
+
 public class StringBufferExample {
     public static void main(String[] args) {
         //initial capacity is 16 of StringBuffer
@@ -23,5 +25,16 @@ public class StringBufferExample {
         stringBuffer.delete(0, 3);
         String s = stringBuffer.toString();
         System.out.println(s);
+        System.out.println("***********");
+        //removing space using replaceAll(with pattern)
+        String sent = "Hello  Imtiaze  h ow are you?";
+        System.out.println("Original: " + sent);
+        System.out.println("After apply replaceAll(): " + sent.replaceAll("\s", ""));
+
+        //using of split()
+        String str = "Hello Imtiaze How are you?";
+        String[] splitedString = str.split(" ");
+        System.out.println(Arrays.toString(splitedString));
+
     }
 }
