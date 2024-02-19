@@ -11,8 +11,20 @@ public class FolderOperations {
         System.out.println("Folder Created Successfully " + folderPath);
     }
 
+    //folder exists
+    public static void folderExists(String folderPath) {
+        File folder = new File(folderPath);
+        if (folder.exists()) {
+            System.out.println("Folder exists");
+        } else {
+            System.out.println("Folder not exists");
+        }
+
+    }
+
     public static void main(String[] args) {
-        String folderPath = "F:\\Project Workspace\\Utility Operations\\hello";
-        createFolder(folderPath);
+        String folderPath = "F:\\Project Workspace\\Utility Operations\\hello1";
+        //createFolder(folderPath);
+        folderExists(folderPath);
     }
 }
