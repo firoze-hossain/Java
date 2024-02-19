@@ -22,9 +22,23 @@ public class FolderOperations {
 
     }
 
+    //rename folder
+    public static void renameFolder(String oldFolderPath, String newFolderPath) {
+        File oldFolder = new File(oldFolderPath);
+        File newFolder = new File(newFolderPath);
+        if (oldFolder.exists()) {
+            oldFolder.renameTo(newFolder);
+            System.out.println("Folder is renamed to " + newFolder);
+        } else {
+            System.out.println("Folder does not exist!!");
+        }
+    }
+
     public static void main(String[] args) {
-        String folderPath = "F:\\Project Workspace\\Utility Operations\\hello1";
-        //createFolder(folderPath);
+        String folderPath = "F:\\Project Workspace\\Utility Operations\\hello4";
+        createFolder(folderPath);
         folderExists(folderPath);
+        String newFolder = "F:\\Project Workspace\\Utility Operations\\helloFinal";
+        renameFolder(folderPath, newFolder);
     }
 }
