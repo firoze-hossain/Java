@@ -63,13 +63,24 @@ public class FileOperations {
         }
     }
 
+    //delete file
+    public static void deleteFile(String filePath) {
+        File file = new File(filePath);
+        if (file.delete()) {
+            System.out.println("Deleted successfully: " + file.getName());
+        } else {
+            System.out.println("Fail to delete: " + file.getName());
+        }
+    }
+
     public static void main(String[] args) {
         String filePath = "/home/firoze/Project Workspace/Utils Opeartions/file.txt";
-        // createNewFile(filePath);
-        //  writeFile(filePath);
-        //readFile(filePath);
+        createNewFile(filePath);
+        writeFile(filePath);
+        readFile(filePath);
         String newFileName = "/home/firoze/Project Workspace/Utils Opeartions/fh.txt";
         renameFile(filePath, newFileName);
+        deleteFile(newFileName);
 
     }
 }
