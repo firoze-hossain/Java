@@ -1,8 +1,10 @@
 package com.roze.fileHandling.fileOperations;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class FileOperations {
     public static void createNewFile(String filePath) {
@@ -32,9 +34,25 @@ public class FileOperations {
 
     }
 
+    public static void readFile(String filePath) {
+        try {
+            File file = new File(filePath);
+            Scanner scanner = new Scanner(file);
+            while (scanner.hasNextLine()) {
+                String data = scanner.nextLine();
+                System.out.println(data);
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Error occured while reading file");
+            e.printStackTrace();
+        }
+
+    }
+
     public static void main(String[] args) {
         String filePath = "/home/firoze/Project Workspace/Utils Opeartions/file.txt";
-        createNewFile(filePath);
-        writeFile(filePath);
+        // createNewFile(filePath);
+        //  writeFile(filePath);
+        readFile(filePath);
     }
 }
