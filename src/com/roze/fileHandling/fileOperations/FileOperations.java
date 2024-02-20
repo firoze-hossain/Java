@@ -1,6 +1,7 @@
 package com.roze.fileHandling.fileOperations;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class FileOperations {
@@ -18,8 +19,22 @@ public class FileOperations {
 
     }
 
+    public static void writeFile(String filePath) {
+        FileWriter fileWriter;
+        try {
+            fileWriter = new FileWriter(filePath);
+            fileWriter.write("Welcome to Java again");
+            System.out.println("File is written successfully");
+            fileWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
     public static void main(String[] args) {
-        String filePath = "/home/firoze/Project Workspace/Utils Opeartions/";
-        createNewFile(filePath + "file.txt");
+        String filePath = "/home/firoze/Project Workspace/Utils Opeartions/file.txt";
+        createNewFile(filePath);
+        writeFile(filePath);
     }
 }
