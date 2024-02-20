@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class FileOperations {
+    //create new file
     public static void createNewFile(String filePath) {
         File file = new File(filePath);
         try {
@@ -21,6 +22,7 @@ public class FileOperations {
 
     }
 
+    //write file
     public static void writeFile(String filePath) {
         FileWriter fileWriter;
         try {
@@ -34,6 +36,7 @@ public class FileOperations {
 
     }
 
+    //read file
     public static void readFile(String filePath) {
         try {
             File file = new File(filePath);
@@ -49,10 +52,24 @@ public class FileOperations {
 
     }
 
+    //rename file
+    public static void renameFile(String oldFilePath, String newFilePath) {
+        File file1 = new File(oldFilePath);
+        File file2 = new File(newFilePath);
+        if (file1.renameTo(file2)) {
+            System.out.println("File renamed successfully: " + file2.getName());
+        } else {
+            System.out.println("File can not be renamed: " + file2.getName());
+        }
+    }
+
     public static void main(String[] args) {
         String filePath = "/home/firoze/Project Workspace/Utils Opeartions/file.txt";
         // createNewFile(filePath);
         //  writeFile(filePath);
-        readFile(filePath);
+        //readFile(filePath);
+        String newFileName = "/home/firoze/Project Workspace/Utils Opeartions/fh.txt";
+        renameFile(filePath, newFileName);
+
     }
 }
