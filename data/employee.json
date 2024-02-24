@@ -1,0 +1,16 @@
+{
+  "firstName": "Md. Firoze",
+  "lastName": "Hossain",
+  "address": [
+    {
+      "street": "Zia Soroni",
+      "city": "Dhaka",
+      "state": "Bangladesh"
+    },
+    {
+      "street": "9 no road",
+      "city": "Dhaka",
+      "state": "Bangladesh"
+    }
+  ]
+}
