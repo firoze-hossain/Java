@@ -1,4 +1,4 @@
-package com.roze.fileHandling.jsonFileOperations;
+package com.roze.fileHandling.jsonFileOperations.jackson;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.roze.fileHandling.jsonFileOperations;
+package com.roze.fileHandling.jsonFileOperations.jackson;
 
 public class Address {
     private String street;
