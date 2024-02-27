@@ -11,7 +11,7 @@ public class PdfFileWithPdfBox {
     public static void main(String[] args) {
         File file = new File(System.getProperty("user.dir") + "/data/sample.pdf");
         try {
-            //   PDDocument pdDocument = PDDocument.load(file);// <version>2.0.29</version>
+            //  PDDocument pdDocument = PDDocument.load(file);// <version>2.0.29</version>
             PDDocument pdDocument = Loader.loadPDF(file);//<version>3.0.1</version>
             PDFTextStripper pdfTextStripper = new PDFTextStripper();
             String text = pdfTextStripper.getText(pdDocument);
